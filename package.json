@@ -7,6 +7,7 @@
     "crypto",
     "ethereum",
     "web3modal",
+    "backbone cabal",
     "metamask",
     "walletconnect",
     "portis",
