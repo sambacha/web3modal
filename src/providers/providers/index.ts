@@ -1,6 +1,8 @@
 // @ts-ignore
 import WalletConnectLogo from "../logos/walletconnect-circle.svg";
 // @ts-ignore
+import BackboneLogo from "../logos/backbone.svg";
+// @ts-ignore
 import PortisLogo from "../logos/portis.svg";
 // @ts-ignore
 import FortmaticLogo from "../logos/fortmatic.svg";
@@ -31,6 +33,18 @@ export const WALLETCONNECT: IProviderInfo = {
   logo: WalletConnectLogo,
   type: "qrcode",
   check: "isWalletConnect",
+  package: {
+    required: [["infuraId", "rpc"]]
+  }
+};
+
+// @backbonecabal
+export const BACKBONE: IProviderInfo = {
+  id: "backbone",
+  name: "Backbone Cabal",
+  logo: BackboneLogo,
+  type: "web",
+  check: "isBackbone",
   package: {
     required: [["infuraId", "rpc"]]
   }
